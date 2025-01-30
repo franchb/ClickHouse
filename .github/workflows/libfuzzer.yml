@@ -8,6 +8,9 @@ on: # yamllint disable-line rule:truthy
   #  schedule:
   #    - cron: '0 0 2 31 1' # never for now
   workflow_dispatch:
+  push: # Trigger on every push (commit) to the repository
+    branches: # Optionally specify branches if you want to limit it to certain branches
+      - v24.8-libfuzzer-run
   workflow_call:
     inputs:
       data:

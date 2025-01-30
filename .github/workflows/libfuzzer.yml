@@ -7,6 +7,7 @@ env:
 on: # yamllint disable-line rule:truthy
   #  schedule:
   #    - cron: '0 0 2 31 1' # never for now
+  workflow_dispatch:
   workflow_call:
     inputs:
       data:
